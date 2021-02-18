@@ -81,10 +81,9 @@ const Home = () => {
             <SprintNo>Sprint 1 (15/02/21 - 19/02/21)</SprintNo>
             <BoxWrapper>
                 <LeftContainer>
-                    <EventCarousel />
+                    <EventBox/>
                     <SprintGoalCard/>
                     <TeamMembersInfoBox/>
-                    <EventBox/>
                 </LeftContainer>
                 <RightContainer>
                     <Top>
