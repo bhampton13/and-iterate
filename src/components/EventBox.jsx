@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import Auth from '../services/AuthService'
+import React, { useState, useEffect } from 'react';
+import Auth from '../services/AuthService';
 import IncommingEvents from './IncommingEvents';
 
 /* const TeamBox = ({ props, CheckUser }) => {
@@ -21,28 +21,27 @@ async function getData(){
 
 export default TeamBox; */
 
-
-
 const TeamBox = () => {
-  const [events, setEvents] = useState([]);
+    const [events, setEvents] = useState([]);
 
-  async function fetchData() {
-    const res = await Auth.calendarFunction();
-    console.log(JSON.stringify(res))
-    setEvents(res)
+    async function fetchData() {
+        const res = await Auth.calendarFunction();
+        console.log(JSON.stringify(res));
+        setEvents(res);
+    }
 
-  }
+    useEffect(() => {
+        fetchData();
+        console.log(events);
+    }, []);
 
-  
-useEffect(() => {
-    fetchData()
-    console.log(events)
-  }, [])
-
-  return (
-    <div>
-      <span> <IncommingEvents events={events} /> </span>
-    </div>
-  );
+    return (
+        <div>
+            <span>
+                {' '}
+                <IncommingEvents events={events} />{' '}
+            </span>
+        </div>
+    );
 };
 export default TeamBox;
