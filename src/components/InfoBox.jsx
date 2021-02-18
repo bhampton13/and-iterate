@@ -13,18 +13,6 @@ const Wrapper = styled.div`
   // height: fit-content;
 `;
 
-// const TitleBox = styled.div`
-//   border-radius: 16px 16px 0 0;
-//   padding: 0 1rem;
-//   color: white;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   align-items: flex-end;
-//   font-family: Poppins;
-//   ${props => props};
-// `;
-
 const TitleBox = styled.div`
   border-radius: 16px 16px 0 0;
   padding: 0 1rem;
@@ -56,25 +44,24 @@ const BottomContainer = styled.div`
   text-align: right;
 `;
 
-const InfoBox = (props) => {
-
+const InfoBox = ({card,action}) => {
   return (
-    <Wrapper {...props.style.wrapperStyle}>
-      <TitleBox {...props.style.titleStyle}> 
-      <h1>{props.title}</h1> 
-      {/* <Linker to={props.link} {...props.style.linkStyle}>
-        ?
-      </Linker> */}
+
+    <Wrapper {...card.style.wrapperStyle}>
+      <TitleBox {...card.style.titleStyle}> 
+      <h1>{card.title}</h1> 
+      
       </TitleBox>
-      <BodyBox {...props.style.bodyStyle}> {props.body}   
+      <BodyBox {...card.style.bodyStyle}> {card.body}   
       <BottomContainer>
-      <Linker to={props.link} {...props.style.linkStyle}>
+      <Linker onClick={action} {...card.style.linkStyle}>
         ?
       </Linker>
       </BottomContainer>
       </BodyBox>
     
     </Wrapper>
+    
   );
 }
 

@@ -33,10 +33,11 @@ const cardProps ={
     }
 };
 
-const EventCard = (props) => {
+const EventCard = ({openModal}) => {
 
+  const details = {"id":5,"color":theme.colors.primaryRed}
   return(
-    <InfoBox {...cardProps}/>
+    <InfoBox card={cardProps} action={() => openModal(details)}/>
   );
 
 }

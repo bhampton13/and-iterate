@@ -36,15 +36,15 @@ const cardProps ={
       borderColor: theme.colors.primaryBlue,
       color: theme.colors.primaryBlue,
     }
-  },
-  linkName:"Sprint goal",
-  link:"www.google.com"
+  }
 };
 
-const SprintGoalCard = (props) => {
+const SprintGoalCard = ({openModal}) => {
+
+  const details = {"id":1,"color":theme.colors.primaryBlue}
 
   return(
-    <InfoBox {...cardProps}/>
+    <InfoBox card ={cardProps} action={() => openModal(details)}/>
   );
 
 }

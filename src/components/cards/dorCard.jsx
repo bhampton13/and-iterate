@@ -39,15 +39,14 @@ const cardProps ={
       borderColor: theme.colors.secondaryOrange,
       color: theme.colors.secondaryOrange,
     },
-  },
-  linkName:"Definition of Ready",
-  link:"www.google.com"
+  }
 };
 
-const DorCard = (props) => {
+const DorCard = ({openModal}) => {
 
+  const details = {"id":3,"color":theme.colors.secondaryOrange}
   return(
-    <InfoBox {...cardProps}/>
+    <InfoBox card={cardProps} action={() => openModal(details)}/>
   );
 
 }
