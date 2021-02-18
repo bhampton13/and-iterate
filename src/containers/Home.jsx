@@ -2,6 +2,7 @@ import React from 'react'
 import { media } from "../styles/theme"
 import styled from "styled-components"
 import TeamMembersInfoBox from "../components/TeamMembersInfoBox"
+import EventBox from "../components/EventBox"
 import { Page } from "../components/Page"
 import SprintGoalCard from "../components/cards/sprintGoalCard";
 import RetroActionsCard from '../components/cards/retroActionsCard';
@@ -83,6 +84,7 @@ const Home = () => {
                     <EventCarousel />
                     <SprintGoalCard/>
                     <TeamMembersInfoBox/>
+                    <EventBox/>
                 </LeftContainer>
                 <RightContainer>
                     <Top>
