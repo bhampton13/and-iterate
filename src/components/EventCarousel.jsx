@@ -76,7 +76,7 @@ const BottomContainer = styled.div`
 const EventCarousel = () => {
 
     return <CarouselProvider naturalSlideWidth={100} naturalSlideHeight={60} totalSlides={3} style={{ margin: '1.5rem 1rem', minWidth: '90%', maxWidth: '95%'}}>
-        <Slider style={{ boxShadow: '0 4px 2px -1px #c1c1c1', borderRadius: '1rem', border: 'solid 3px #FF323C', height: '24rem', maxHeight: '26rem' }}>
+        <Slider style={{ boxShadow: '0 4px 2px -1px #c1c1c1', borderRadius: '1rem', border: 'solid 3px #FF323C', height: '26rem', maxHeight: '28rem' }}>
             {Events.items.map((event) => {
                 return <Slide>
                     <Card>
