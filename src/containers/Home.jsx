@@ -8,8 +8,6 @@ import SprintGoalCard from '../components/cards/sprintGoalCard';
 import RetroActionsCard from '../components/cards/retroActionsCard';
 import DodCard from '../components/cards/dodCard';
 import DorCard from '../components/cards/dorCard';
-import EventCard from '../components/cards/SprintEvent';
-import EventCarousel from '../components/EventCarousel';
 
 const LeftContainer = styled.div`
     width: 100%;
@@ -81,10 +79,9 @@ const Home = () => {
                 <SprintNo>Sprint 1 (15/02/21 - 19/02/21)</SprintNo>
                 <BoxWrapper>
                     <LeftContainer>
-                        <EventCarousel />
+                        <EventBox />
                         <SprintGoalCard />
                         <TeamMembersInfoBox />
-                        <EventBox />
                     </LeftContainer>
                     <RightContainer>
                         <Top>

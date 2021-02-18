@@ -1,15 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Events from '../resources/data/events.json';
 import { media } from '../styles/theme';
-import { CarouselProvider, Slider,Slide } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const Header = styled.p`
     color: ${(p) => p.theme.colors.primaryRed};
     font-size: 1.5rem;
-    // margin: 0.5rem 0;
     margin: 0;
 
     ${media.desktop`
@@ -66,7 +64,9 @@ const BottomContainer = styled.div`
     align-items: center;
 `;
 
-const EventCarousel = () => {
+const EventCarousel = ({ events }) => {
+    console.log(events);
+
     return (
         <CarouselProvider
             naturalSlideWidth={100}
@@ -83,7 +83,7 @@ const EventCarousel = () => {
                     maxHeight: '28rem'
                 }}
             >
-                {Events.items.map((event) => {
+                {events.map((event) => {
                     return (
                         <Slide>
                             <Card>
@@ -104,7 +104,6 @@ const EventCarousel = () => {
                         </Slide>
                     );
                 })}
-                {/* <DotGroup dotNumbers={true}/> */}
             </Slider>
         </CarouselProvider>
     );
