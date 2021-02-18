@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { media } from "../styles/theme"
 import styled from "styled-components"
 import TeamMembersInfoBox from "../components/TeamMembersInfoBox"
+import EventBox from "../components/EventBox"
 import { Page } from "../components/Page"
 import SprintGoalCard from "../components/cards/sprintGoalCard";
 import RetroActionsCard from '../components/cards/retroActionsCard';
@@ -92,7 +93,7 @@ const Home = () => {
             <SprintNo>Sprint 1 (15/02/21 - 19/02/21)</SprintNo>
             <BoxWrapper>
                 <LeftContainer>
-                    <EventCarousel openModal={(details) => openModal(details)}/>
+                    <EventBox/>
                     <SprintGoalCard openModal={(details) => openModal(details)}/>
                     <TeamMembersInfoBox openModal={(details) => openModal(details)}/>
                 </LeftContainer>

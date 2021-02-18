@@ -1,11 +1,29 @@
-import React from 'react';
-import Events from '../../resources/data/events.json';
-import IncommingEvents from './IncommingEvents';
+import React, { useState, useEffect } from "react";
+import Auth from '../services/AuthService'
+import EventCarousel from "../components/EventCarousel"
+import IncommingEvents from "../components/IncommingEvents"
 
-export default function TeamBox() {
-    const calendarEvents = Events.items.map(events => <IncommingEvents events={events} />)
-    return (
-        <div>
-            {calendarEvents}
-        </div>)
-}
+
+const TeamBox = () => {
+  const [events, setEvents] = useState([]);
+
+  async function fetchData() {
+    const res = await Auth.calendarFunction();
+    console.log(JSON.stringify(res))
+    setEvents(res)
+
+  }
+
+  
+useEffect(() => {
+    fetchData()
+    console.log('hey', events)
+  }, [])
+
+  return (
+    <div>
+      <span> <EventCarousel events={events} /> </span>
+    </div>
+  );
+};
+export default TeamBox;

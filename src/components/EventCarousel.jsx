@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
-import Events from '../resources/data/events.json'
-import theme, { media } from "../styles/theme"
+import { media } from "../styles/theme"
 
 
-import { CarouselProvider, Slider, Slide, DotGroup, ButtonNext } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 
@@ -73,12 +72,13 @@ const BottomContainer = styled.div`
     align-items: center;
 `
 
-const EventCarousel = (props) => {
+const EventCarousel = ({ events }) => {
 
-    const details = {"id":5,"color":theme.colors.primaryRed}
+    console.log(events);
+
     return <CarouselProvider naturalSlideWidth={100} naturalSlideHeight={60} totalSlides={3} style={{ margin: '1.5rem 1rem', minWidth: '90%', maxWidth: '95%'}}>
         <Slider style={{ boxShadow: '0 4px 2px -1px #c1c1c1', borderRadius: '1rem', border: 'solid 3px #FF323C', height: '26rem', maxHeight: '28rem' }}>
-            {Events.items.map((event) => {
+            {events.map((event) => {
                 return <Slide>
                     <Card>
                     <Header>Next Sprint Event:</Header>
@@ -87,9 +87,7 @@ const EventCarousel = (props) => {
                         <Subtitle>Start time: {event.start.dateTime.toString("yyyy-MM-dd")}</Subtitle>
                     <BottomContainer>
                     <Text>Swipe to see the next event...</Text>
-                    <Linker onClick={() => props.openModal(details)}>
-                      ?
-                    </Linker>
+                    
                     </BottomContainer>
                     </Card>
                  </Slide>})}
