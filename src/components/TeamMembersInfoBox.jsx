@@ -82,7 +82,7 @@ const carouselProps = {
 const MemberCard = (m) => {
     const mailText = 'Mail ' + m.name;
     return (
-        <Card>
+        <Card key={m}>
             <MemberDetailsRow>
                 <MemberDetails>
                     <MemberImage src={m.photo} />
