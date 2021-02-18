@@ -2,7 +2,9 @@ import React, { useState} from 'react';
 import Carousel from 'react-material-ui-carousel';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import TeamMembers from '../resources/data/teams';
+import theme from '../styles/theme';
 
 const Card = styled.div`
     padding: 20px;
@@ -72,6 +74,16 @@ const Wrapper = styled.div`
     box-shadow: 0 4px 2px -1px #c1c1c1;
     margin: 1.5rem 1rem;
     ${props => props};
+    text-align:right;
+    padding:1em;
+`;
+
+const Linker = styled(Link)`
+  padding: 0.25rem 0.75rem;
+  text-decoration: none;
+  background-color: #f1f1f1;
+  border-radius: 100%;
+  color: black;
 `;
 
 const carouselProps = {
@@ -99,7 +111,7 @@ const MemberCard = (m) => {
 
 const TeamMembersInfoBox = (props) => {
     const [members] = useState(TeamMembers)
-
+    const details = {"id":4,"color":theme.colors.secondaryPurple}
     return (
         <Wrapper>
             <TitleBox><h1>Members of your Scrum Team</h1></TitleBox>
@@ -108,6 +120,10 @@ const TeamMembersInfoBox = (props) => {
                     <MemberCard {...member} />
                 ))}
             </Carousel>
+            <Linker onClick={() => props.openModal(details)}>
+                ?
+            </Linker>
+
         </Wrapper>
     );
 }

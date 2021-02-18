@@ -87,7 +87,7 @@ const EventCarousel = ({ events }) => {
                         <Subtitle>Start time: {event.start.dateTime.toString("yyyy-MM-dd")}</Subtitle>
                     <BottomContainer>
                     <Text>Swipe to see the next event...</Text>
-                    <Linker>?</Linker>
+                    
                     </BottomContainer>
                     </Card>
                  </Slide>})}

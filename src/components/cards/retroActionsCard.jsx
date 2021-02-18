@@ -37,15 +37,17 @@ const cardProps ={
       borderColor: theme.colors.secondaryGreen,
       color: theme.colors.secondaryGreen,
     },
-  },
-  linkName:"Sprint retrospective",
-  link:"www.google.com"
+  }
 };
 
-const RetroActionsCard = (props) => {
+
+
+const RetroActionsCard = ({openModal}) => {
+
+    const details = {"id":0,"color":theme.colors.secondaryGreen}
 
   return(
-    <InfoBox {...cardProps}/>
+    <InfoBox card={cardProps} action={() => openModal(details)}/>
   );
 
 }

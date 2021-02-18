@@ -1,0 +1,102 @@
+[
+  {
+    "id":0,
+    "title":"Sprint Retrospective",
+    "content":[{
+      "header":"Who's involved?",
+      "items":[
+        "Scrum master",
+        "Product Owner",
+        "Developers"
+      ]
+      },{
+        "header":"When and for how long?",
+        "items":[
+          "After the Sprint Review and before the next Sprint Planning session",
+          "3 hours max (for shorter Sprints the full 3 hours may not be necessary)"
+        ]
+      },{
+        "header":"What is it?",
+        "items":[
+          "Time to reflect on what was created and how it was created",
+          "Review the Definition of Ready and the Definition of Done",
+          "Identify what went well and improvements to make the next Sprint more effective and efficient",
+          "Scrum Master ensures that the meeting takes place in the timebox and encourages the team to improve"
+        ]
+      }
+    ]},
+  {
+    "id":1,
+    "title":"Sprint Goals",
+    "content":[{
+      "header":"What are they?",
+      "items":[
+        "Is a business objective set during planning to provide focus",
+        "The commitment to the Sprint Backlog",
+        "Can be formed either bottom up or top down",
+        "Goals are SMART (Specific, Measurable, Achievable, Relevant and Time Limited)"
+      ]
+    }]
+  },
+  {
+    "id":2,
+    "title":"Definition of Done",
+    "content":[{
+      "header":"What is it?",
+      "items":[
+        "The commitment to the increment",
+        "When the Sprint comes to an end the product should be in a ‘Done’ state as defined by the DoD",
+        "Is agreed up-front to ensure all work required is included in the estimates",
+        "The ‘Done’ increment should be potentially releasable and is integrated with previous increments"
+      ]
+    }]
+  },{
+    "id":3,
+    "title":"Definiton of Ready",
+    "content":[{
+      "header":"What is it?",
+      "items":[
+        "A working agreement between the team and Product Owner on what readiness means",
+        "Ensures stories proposed for the Sprint have enough detail",
+        "A backlog item is only ‘Ready’ if it’s clear and if all team members have a shared understanding of what it means",
+        "Not having a clearly defined DoR can lead to rework or waste"
+      ]
+    }]
+  },{
+    "id":4,
+    "title":"Team members",
+    "content":[{
+      "header":"Scrum Master:",
+      "items":[
+        "Serves the scrum team by helping the team focus on high value increments that meet the Definition of Done",
+        "Ensure all Scrum events take place within the timebox and are positive and productive",
+        "Serves the Product Owner by helping to find techniques for effective Product Goal definition and Product Backlog management",
+        "Facilitating stakeholder collaboration as requested or needed",
+        "Serves the Organisation by leading, training and coaching the organisation in its Scrum adoption",
+        "Helping employees and stakeholders understand and enact an empirical approach for complex work"
+      ]
+    },{
+      "header":"Product Owner is accountable for:",
+      "items":[
+        "Maximising the value of the product from the work of the Scrum Team",
+        "Developing and communicating the Product Goal",
+        "Creating and clearly communicating Product Backlog items",
+        "Ordering Product Backlog items",
+        "Ensuring the Product Backlog is transparent, visible and understood"
+      ]},{
+        "header":"Developers are accountable for:",
+        "items":[
+          "Creating a plan for the Sprint",
+          "Adhering to a Definition of Done to instill quality",
+          "Adapting their plan towards a Sprint Goal each day",
+          "Holding each other accountable"
+        ]}
+  ]},{
+    "id":"5",
+    "title":"Sprint Events",
+    "content":[{
+      "header":"Check the Scrum info page for information about each scrum event",
+      "items":[]
+      }]
+  }
+]
