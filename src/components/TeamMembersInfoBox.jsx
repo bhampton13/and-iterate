@@ -34,7 +34,7 @@ const MemberDetails = styled.div`
 const MemberImage = styled.img`
     border-radius: 20px;
     height: auto;
-    max-height: 200px;
+    max-height: 300px;
     max-width: 300px;
     object-fit: cover;
     width: 100%;
@@ -71,6 +71,7 @@ const Wrapper = styled.div`
     border-style: solid;
     box-shadow: 0 4px 2px -1px #c1c1c1;
     margin: 1.5rem 1rem;
+    width: -webkit-fill-available;
     ${(props) => props};
 `;
 

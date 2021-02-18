@@ -80,16 +80,19 @@ const Home = () => {
                 <BoxWrapper>
                     <LeftContainer>
                         <EventBox />
-                        <SprintGoalCard />
-                        <TeamMembersInfoBox />
                     </LeftContainer>
                     <RightContainer>
-                        <Top>
-                            <DorCard />
-                            <DodCard />
-                        </Top>
-                        <RetroActionsCard />
+                        <SprintGoalCard />
                     </RightContainer>
+                </BoxWrapper>
+                <BoxWrapper>
+                    <DorCard />
+                    <DodCard />
+                    <RetroActionsCard />
+                </BoxWrapper>
+
+                <BoxWrapper>
+                    <TeamMembersInfoBox />
                 </BoxWrapper>
             </ContentWrapper>
         </Page>

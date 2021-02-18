@@ -253,7 +253,7 @@ const productIncProps = {
         <BoxContentWrapper>
             <BoxSubtitle>What is it?</BoxSubtitle>
             <List>
-                <ListItem></ListItem>
+                <ListItem>The sum of all increments</ListItem>
             </List>
         </BoxContentWrapper>
     ),
