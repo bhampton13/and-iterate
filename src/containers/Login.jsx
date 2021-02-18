@@ -17,6 +17,7 @@ const Title = styled.p`
     font-size: 5rem; 
     color: white; 
     text-align: center;
+    font-weight: 800; 
 `
 
 const Subtitle = styled.p`
