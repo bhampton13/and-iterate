@@ -1,113 +1,110 @@
- {
-            "kind": "calendar#events",
-            "etag": "\"p328cjtcghjmes0g\"",
-            "summary": "calendarappteam1@gmail.com",
-            "updated": "2021-02-15T14:25:31.514Z",
-            "timeZone": "Europe/London",
-            "accessRole": "owner",
-            "defaultReminders": [
-                {
-                    "method": "popup",
-                    "minutes": 30
-                }
-            ],
-            "nextSyncToken": "NA",
-            "items": [
-                {
-                    "kind": "calendar#event",
-                    "etag": "\"3226798263028000\"",
-                    "id": "64nm0bhofemc8u7krnbm379tgo",
-                    "status": "confirmed",
-                    "htmlLink": "https://www.google.com/calendar/event?eid=NjRubTBiaG9mZW1jOHU3a3JuYm0zNzl0Z28gY2FsZW5kYXJhcHB0ZWFtMUBt",
-                    "created": "2021-02-15T14:25:31.000Z",
-                    "updated": "2021-02-15T14:25:31.514Z",
-                    "summary": "Daily Sprint",
-                    "description": "Discuss tasks for the days, blockers, progress and other work done towards the sprint goal",
-                    "creator": {
-                        "email": "calendarappteam1@gmail.com",
-                        "self": true
-                    },
-                    "organizer": {
-                        "email": "calendarappteam1@gmail.com",
-                        "self": true
-                    },
-                    "start": {
-                        "dateTime": "2021-02-19T09:30:00Z"
-                    },
-                    "end": {
-                        "dateTime": "2021-02-19T09:45:00Z"
-                    },
-                    "iCalUID": "64nm0bhofemc8u7krnbm379tgo@google.com",
-                    "sequence": 0,
-                    "reminders": {
-                        "useDefault": true
-                    },
-                    "eventType": "default"
-                },
-                {
-                    "kind": "calendar#event",
-                    "etag": "\"3226798263028000\"",
-                    "id": "64nm0bhofemc8u7krnbm379tgo",
-                    "status": "confirmed",
-                    "htmlLink": "https://www.google.com/calendar/event?eid=NjRubTBiaG9mZW1jOHU3a3JuYm0zNzl0Z28gY2FsZW5kYXJhcHB0ZWFtMUBt",
-                    "created": "2021-02-15T14:25:31.000Z",
-                    "updated": "2021-02-15T14:25:31.514Z",
-                    "summary": "Sprint Retro",
-                    "description": "Review how the weekly sprint went. Discuss what went well, what could have done better and what we could do different next time",
-                    "creator": {
-                        "email": "calendarappteam1@gmail.com",
-                        "self": true
-                    },
-                    "organizer": {
-                        "email": "calendarappteam1@gmail.com",
-                        "self": true
-                    },
-                    "start": {
-                        "dateTime": "2021-02-19T16:30:00Z"
-                    },
-                    "end": {
-                        "dateTime": "2021-02-19T17:30:00Z"
-                    },
-                    "iCalUID": "64nm0bhofemc8u7krnbm379tgo@google.com",
-                    "sequence": 0,
-                    "reminders": {
-                        "useDefault": true
-                    },
-                    "eventType": "default"
-                }
-                ,
-                {
-                    "kind": "calendar#event",
-                    "etag": "\"3226798263028000\"",
-                    "id": "64nm0bhofemc8u7krnbm379tgo",
-                    "status": "confirmed",
-                    "htmlLink": "https://www.google.com/calendar/event?eid=NjRubTBiaG9mZW1jOHU3a3JuYm0zNzl0Z28gY2FsZW5kYXJhcHB0ZWFtMUBt",
-                    "created": "2021-02-15T14:25:31.000Z",
-                    "updated": "2021-02-15T14:25:31.514Z",
-                    "summary": "Product Deadline",
-                    "description": "Completed Product Due.",
-                    "creator": {
-                        "email": "calendarappteam1@gmail.com",
-                        "self": true
-                    },
-                    "organizer": {
-                        "email": "calendarappteam1@gmail.com",
-                        "self": true
-                    },
-                    "start": {
-                        "dateTime": "2021-02-28T16:30:00Z"
-                    },
-                    "end": {
-                        "dateTime": "2021-02-28T17:30:00Z"
-                    },
-                    "iCalUID": "64nm0bhofemc8u7krnbm379tgo@google.com",
-                    "sequence": 0,
-                    "reminders": {
-                        "useDefault": true
-                    },
-                    "eventType": "default"
-                }
-            ]
+{
+    "kind": "calendar#events",
+    "etag": "\"p328cjtcghjmes0g\"",
+    "summary": "calendarappteam1@gmail.com",
+    "updated": "2021-02-15T14:25:31.514Z",
+    "timeZone": "Europe/London",
+    "accessRole": "owner",
+    "defaultReminders": [
+        {
+            "method": "popup",
+            "minutes": 30
         }
-    
-
+    ],
+    "nextSyncToken": "NA",
+    "items": [
+        {
+            "kind": "calendar#event",
+            "etag": "\"3226798263028000\"",
+            "id": "64nm0bhofemc8u7krnbm379tgo",
+            "status": "confirmed",
+            "htmlLink": "https://www.google.com/calendar/event?eid=NjRubTBiaG9mZW1jOHU3a3JuYm0zNzl0Z28gY2FsZW5kYXJhcHB0ZWFtMUBt",
+            "created": "2021-02-15T14:25:31.000Z",
+            "updated": "2021-02-15T14:25:31.514Z",
+            "summary": "Daily Sprint",
+            "description": "Discuss tasks for the days, blockers, progress and other work done towards the sprint goal",
+            "creator": {
+                "email": "calendarappteam1@gmail.com",
+                "self": true
+            },
+            "organizer": {
+                "email": "calendarappteam1@gmail.com",
+                "self": true
+            },
+            "start": {
+                "dateTime": "2021-02-19T09:30:00Z"
+            },
+            "end": {
+                "dateTime": "2021-02-19T09:45:00Z"
+            },
+            "iCalUID": "64nm0bhofemc8u7krnbm379tgo@google.com",
+            "sequence": 0,
+            "reminders": {
+                "useDefault": true
+            },
+            "eventType": "default"
+        },
+        {
+            "kind": "calendar#event",
+            "etag": "\"3226798263028000\"",
+            "id": "64nm0bhofemc8u7krnbm379tgo",
+            "status": "confirmed",
+            "htmlLink": "https://www.google.com/calendar/event?eid=NjRubTBiaG9mZW1jOHU3a3JuYm0zNzl0Z28gY2FsZW5kYXJhcHB0ZWFtMUBt",
+            "created": "2021-02-15T14:25:31.000Z",
+            "updated": "2021-02-15T14:25:31.514Z",
+            "summary": "Sprint Retro",
+            "description": "Review how the weekly sprint went. Discuss what went well, what could have done better and what we could do different next time",
+            "creator": {
+                "email": "calendarappteam1@gmail.com",
+                "self": true
+            },
+            "organizer": {
+                "email": "calendarappteam1@gmail.com",
+                "self": true
+            },
+            "start": {
+                "dateTime": "2021-02-19T16:30:00Z"
+            },
+            "end": {
+                "dateTime": "2021-02-19T17:30:00Z"
+            },
+            "iCalUID": "64nm0bhofemc8u7krnbm379tgo@google.com",
+            "sequence": 0,
+            "reminders": {
+                "useDefault": true
+            },
+            "eventType": "default"
+        },
+        {
+            "kind": "calendar#event",
+            "etag": "\"3226798263028000\"",
+            "id": "64nm0bhofemc8u7krnbm379tgo",
+            "status": "confirmed",
+            "htmlLink": "https://www.google.com/calendar/event?eid=NjRubTBiaG9mZW1jOHU3a3JuYm0zNzl0Z28gY2FsZW5kYXJhcHB0ZWFtMUBt",
+            "created": "2021-02-15T14:25:31.000Z",
+            "updated": "2021-02-15T14:25:31.514Z",
+            "summary": "Product Deadline",
+            "description": "Completed Product Due.",
+            "creator": {
+                "email": "calendarappteam1@gmail.com",
+                "self": true
+            },
+            "organizer": {
+                "email": "calendarappteam1@gmail.com",
+                "self": true
+            },
+            "start": {
+                "dateTime": "2021-02-28T16:30:00Z"
+            },
+            "end": {
+                "dateTime": "2021-02-28T17:30:00Z"
+            },
+            "iCalUID": "64nm0bhofemc8u7krnbm379tgo@google.com",
+            "sequence": 0,
+            "reminders": {
+                "useDefault": true
+            },
+            "eventType": "default"
+        }
+    ]
+}

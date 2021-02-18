@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from "styled-components";
+import styled from 'styled-components';
 import theme from '../../styles/theme';
-import InfoBox from "../InfoBox";
+import InfoBox from '../InfoBox';
 
 const List = styled.ul`
     list-style: none;
@@ -10,43 +10,40 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-    background-color: ${p => p.theme.colors.primaryBlue};
+    background-color: ${(p) => p.theme.colors.primaryBlue};
     margin: 1rem 0;
     padding: 0.5rem;
-    color: ${p => p.theme.colors.primaryWhite};       
-    font-weight: ${p => p.theme.h1.fontWeight};
+    color: ${(p) => p.theme.colors.primaryWhite};
+    font-weight: ${(p) => p.theme.h1.fontWeight};
     font-family: Roboto, sans-serif;
 `;
 
-const cardProps ={
-  title: "Sprint Goals",
-  body: 
-      <List>
-          <ListItem>Deliver MVP</ListItem>
-          <ListItem>Set up database</ListItem>
-      </List>,
-  style:{
-    wrapperStyle: {
-      border: "solid 3px",
-      borderColor: theme.colors.primaryBlue,
-    },
-    titleStyle:{
-      height: '100%',
-      borderBottom: "solid 3px",
-      borderColor: theme.colors.primaryBlue,
-      color: theme.colors.primaryBlue,
+const cardProps = {
+    title: 'Sprint Goals',
+    body: (
+        <List>
+            <ListItem>Deliver MVP</ListItem>
+            <ListItem>Set up database</ListItem>
+        </List>
+    ),
+    style: {
+        wrapperStyle: {
+            border: 'solid 3px',
+            borderColor: theme.colors.primaryBlue
+        },
+        titleStyle: {
+            height: '100%',
+            borderBottom: 'solid 3px',
+            borderColor: theme.colors.primaryBlue,
+            color: theme.colors.primaryBlue
+        }
     }
-  }
 };
 
-const SprintGoalCard = ({openModal}) => {
+const SprintGoalCard = ({ openModal }) => {
+    const details = { id: 1, color: theme.colors.primaryBlue };
 
-  const details = {"id":1,"color":theme.colors.primaryBlue}
-
-  return(
-    <InfoBox card ={cardProps} action={() => openModal(details)}/>
-  );
-
-}
+    return <InfoBox card={cardProps} action={() => openModal(details)} />;
+};
 
 export default SprintGoalCard;
