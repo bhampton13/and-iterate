@@ -42,7 +42,7 @@ const StyledLink = styled(Link)`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <StyledLink to="/"><li>Home</li></StyledLink>
+      <StyledLink to="/home"><li>Home</li></StyledLink>
       <StyledLink to="/scrum-info"><li>Scrum Info</li></StyledLink>
     </Ul>
   )
