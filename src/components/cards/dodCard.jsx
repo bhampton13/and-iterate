@@ -38,13 +38,13 @@ const cardProps = {
             borderColor: theme.colors.secondaryPink,
             color: theme.colors.secondaryPink
         }
-    },
-    linkName: 'Definition of Done',
-    link: 'www.google.com'
+    }
 };
 
-const DodCard = (props) => {
-    return <InfoBox {...cardProps} />;
+const DodCard = ({ openModal }) => {
+    const details = { id: 2, color: theme.colors.secondaryPink };
+
+    return <InfoBox card={cardProps} action={() => openModal(details)} />;
 };
 
 export default DodCard;

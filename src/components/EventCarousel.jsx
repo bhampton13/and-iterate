@@ -48,15 +48,6 @@ const Card = styled.div`
     padding: 2rem;
 `;
 
-const Linker = styled(Link)`
-    padding: 0.25rem 0.75rem;
-    text-decoration: none;
-    background-color: #f1f1f1;
-    border-radius: 100%;
-    color: black;
-    height: fit-content;
-`;
-
 const BottomContainer = styled.div`
     display: flex;
     flex-direction: row;
@@ -98,12 +89,12 @@ const EventCarousel = ({ events }) => {
                                 </Subtitle>
                                 <BottomContainer>
                                     <Text>Swipe to see the next event...</Text>
-                                    <Linker>?</Linker>
                                 </BottomContainer>
                             </Card>
                         </Slide>
                     );
                 })}
+                {/* <DotGroup dotNumbers={true}/> */}
             </Slider>
         </CarouselProvider>
     );

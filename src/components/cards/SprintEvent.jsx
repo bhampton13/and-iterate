@@ -32,8 +32,9 @@ const cardProps = {
     }
 };
 
-const EventCard = (props) => {
-    return <InfoBox {...cardProps} />;
+const EventCard = ({ openModal }) => {
+    const details = { id: 5, color: theme.colors.primaryRed };
+    return <InfoBox card={cardProps} action={() => openModal(details)} />;
 };
 
 export default EventCard;

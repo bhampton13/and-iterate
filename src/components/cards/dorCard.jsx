@@ -48,13 +48,12 @@ const cardProps = {
             borderColor: theme.colors.secondaryOrange,
             color: theme.colors.secondaryOrange
         }
-    },
-    linkName: 'Definition of Ready',
-    link: 'www.google.com'
+    }
 };
 
-const DorCard = (props) => {
-    return <InfoBox {...cardProps} />;
+const DorCard = ({ openModal }) => {
+    const details = { id: 3, color: theme.colors.secondaryOrange };
+    return <InfoBox card={cardProps} action={() => openModal(details)} />;
 };
 
 export default DorCard;
