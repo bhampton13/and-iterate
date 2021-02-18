@@ -1,26 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Auth from '../services/AuthService'
-import IncommingEvents from './IncommingEvents';
-
-/* const TeamBox = ({ props, CheckUser }) => {
-    
-async function getData(){
-    let Events = await Auth.calendarFunction();
-    console.log(Events)
-    let calendarEvents = Events.map(events => <IncommingEvents events={events} />)
-    console.log(JSON.stringify(calendarEvents));
-}
-    
-
-    return (
-        <div>
-            <button onClick={getData}>Hello</button>
-        </div>)
-    
-}
-
-export default TeamBox; */
-
+import EventCarousel from "../components/EventCarousel"
+import IncommingEvents from "../components/IncommingEvents"
 
 
 const TeamBox = () => {
@@ -36,12 +17,12 @@ const TeamBox = () => {
   
 useEffect(() => {
     fetchData()
-    console.log(events)
+    console.log('hey', events)
   }, [])
 
   return (
     <div>
-      <span> <IncommingEvents events={events} /> </span>
+      <span> <EventCarousel events={events} /> </span>
     </div>
   );
 };
