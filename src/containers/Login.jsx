@@ -56,9 +56,7 @@ const Login = ({ props, CheckUser }) => {
         }
     }
 
-    const handleClick4 = () => {
-        Auth.logoutFunction();
-    };
+   
 
     return (
         <Container>
@@ -67,16 +65,10 @@ const Login = ({ props, CheckUser }) => {
                 <Subtitle>Please Login to Access your Dashboard</Subtitle>
                 <ButtonContainer>
                     <Button
-                        style={{ width: 100, height: 50 }}
+                        style={{ width: 200, height: 50 }}
                         onClick={handleClick}
                     >
                         Login
-                    </Button>
-                    <Button
-                        style={{ width: 100, height: 50 }}
-                        onClick={handleClick4}
-                    >
-                        Log Out
                     </Button>
                 </ButtonContainer>
             </header>

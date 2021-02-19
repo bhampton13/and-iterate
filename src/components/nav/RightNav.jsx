@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import Auth from "../../services/AuthService"
 
 const Ul = styled.ul`
     list-style: none;
@@ -41,6 +42,12 @@ const StyledLink = styled(Link)`
 `;
 
 const RightNav = ({ open }) => {
+
+
+    const handleClick4 = () => {
+        Auth.logoutFunction();
+    };
+
     return (
         <Ul open={open}>
             <StyledLink to="/home">
@@ -48,6 +55,9 @@ const RightNav = ({ open }) => {
             </StyledLink>
             <StyledLink to="/scrum-info">
                 <li>Scrum Info</li>
+            </StyledLink>
+            <StyledLink to="/" onClick={handleClick4}>
+                <li>Logout</li>
             </StyledLink>
         </Ul>
     );
