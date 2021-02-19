@@ -3,7 +3,7 @@ import styled, { withTheme } from 'styled-components';
 import { Page } from '../components/Page';
 import Sprints from '../layouts/Sprints';
 import ScrumRoles from '../layouts/ScrumRoles';
-import SprintCeremonies from '../layouts/SprintCeremonies';
+import ScrumEvents from '../layouts/ScrumEvents';
 import ScrumArtifacts from '../layouts/ScrumArtifacts';
 import ScrumPillars from '../layouts/ScrumPillars';
 import ScrumValues from '../layouts/ScrumValues';
@@ -16,6 +16,7 @@ const ContentWrapper = styled.div`
     margin: 0 auto;
     padding: 1rem;
     min-height: -webkit-fill-available;
+    width: 100%;
 `;
 
 const Title = styled.div`
@@ -33,7 +34,7 @@ const ScrumInfo = () => {
                 <Title>Scrum Hints & Tips</Title>
                 <Sprints />
                 <ScrumRoles />
-                <SprintCeremonies />
+                <ScrumEvents />
                 <ScrumArtifacts />
                 <ScrumPillars />
                 <ScrumValues />
