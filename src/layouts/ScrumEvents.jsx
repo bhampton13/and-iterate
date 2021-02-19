@@ -282,10 +282,9 @@ const retroProps = {
 const SprintCeremonies = (props) => {
     return (
         <SectionWrapper>
-            <Heading>Sprint Ceremonies</Heading>
+            <Heading>Scrum Events</Heading>
             <SectionText>
-                In scrum there are events called Sprint Ceremonies. These events
-                will occur in every sprint undertaken.
+                In scrum there are events that will occur in every sprint undertaken.
             </SectionText>
             <BoxWrapper>
                 <InfoBoxWithoutLink {...planningProps} />
