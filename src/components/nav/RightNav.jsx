@@ -33,7 +33,7 @@ const Ul = styled.ul`
             color: ${(p) => p.theme.colors.primaryRed};
             padding: 1rem 0;
             font-size: ${(p) => p.theme.h1.size};
-            width: 90%;
+            width: 100%;
         }
     }
 `;
